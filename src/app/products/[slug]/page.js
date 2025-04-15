@@ -6,7 +6,7 @@ const Page = async ({ params }) => {
 
   return (
     <Suspense>
-      <ProductCard slug={slug} />
+      <ProductCard key={slug} slug={slug} />
     </Suspense>
   );
 };

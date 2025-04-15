@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section
-      className="mt-10 bg-cover bg-center h-[500px] flex items-center justify-center text-white"
+      className="bg-cover bg-center h-[85vh] flex items-center justify-center text-white"
       style={{ backgroundImage: "url('/salt1.jpeg')" }}
     >
       <div className="text-center">

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex w-full h-30 items-center gap-3 p-4 bg-[#1D3C6A] text-white justify-center sm:justify-between">
+    <div className="flex w-full h-[15vh] items-center gap-3 p-4 bg-[#1D3C6A] text-white justify-center sm:justify-between">
       <div className="sm:ml-4 ">
         <Image
           src="/logo.svg"
@@ -34,7 +34,7 @@ const Header = () => {
             Products
           </Link>
 
-          <ul className="hidden group-hover/anas:block absolute top-6 text-white bg-[#00255d] max-w-[200px] rounded-md w-full">
+          <ul className="hidden group-hover/anas:block absolute z-20 top-6 text-white bg-[#00255d] max-w-[200px] rounded-md w-full">
             <li className="px-4 py-2 w-full hover:bg-white hover:text-black ">
               <Link href="/products/himalayan-pink-salt">
                 Himalayan Pink Salt

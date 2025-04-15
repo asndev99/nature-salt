@@ -20,8 +20,8 @@ const ProductCard = ({ slug }) => {
         {slug.replace("-", " ")}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 mb-10">
-        {productData?.map((product) => (
-          <div className="flex items-center flex-col gap-2">
+        {productData?.map((product, index) => (
+          <div key={index} className="flex items-center flex-col gap-2">
             <Image
               src={product.images[0]}
               alt={product.name}
