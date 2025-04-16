@@ -1,7 +1,7 @@
 "use client";
-import { SearchIcon } from "lucide-react";
-import Image from "next/image"; // Ensure Image is imported
+import Image from "next/image";
 import Link from "next/link";
+import MobileNavbar from "./MobileNavbar";
 
 const Header = () => {
   return (
@@ -12,11 +12,11 @@ const Header = () => {
           alt="Logo"
           width={80}
           height={40}
-          className="w-[30px] md:w-[80px] "
+          className="w-[60px] md:w-[80px] "
         />
       </div>
 
-      <nav className="  flex justify-center sm:justify-start items-center whitespace-nowrap gap-6 sm:max-w-[500px] w-full">
+      <nav className="hidden sm:flex justify-center sm:justify-start items-center whitespace-nowrap gap-6 sm:max-w-[500px] w-full">
         <Link href="/" className="hover:underline">
           Home
         </Link>
@@ -54,6 +54,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      </nav>
+
+      <nav className="block sm:hidden w-full">
+        <MobileNavbar />
       </nav>
 
       <div className=" hidden sm:flex w-14"></div>
